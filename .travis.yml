@@ -5,6 +5,8 @@ services:
 before_install:
   - docker build -t rakeshcheekatimala/react-travis-aws -f Dockerfile.dev .
 
+script:
+  - docker run rakeshcheekatimala/react-travis-aws
 
 deploy:
   provider: elasticbeanstalk
