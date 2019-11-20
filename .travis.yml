@@ -3,10 +3,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t rakeshcheekatimala/react-travis-aws11 -f Dockerfile.dev .
+  - docker build -t rakeshcheekatimala/react-travis-aws -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true rakeshcheekatimala/react-travis-aws11 npm run test -- --coverage --watchAll=false
+  - docker run -e CI=true rakeshcheekatimala/react-travis-aws npm run test -- --coverage --watchAll=false
 
 deploy:
   provider: elasticbeanstalk
