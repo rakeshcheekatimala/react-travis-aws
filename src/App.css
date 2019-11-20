@@ -21,6 +21,7 @@
 
 .App-link {
   color: #61dafb;
+  margin-bottom: 1rem;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +31,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.TechStack {
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.TechStack li {
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+.TechStack p {
+  color: #61dafb;
+  font-weight: bold;
 }
